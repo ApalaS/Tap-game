@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/tapBox.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h2 class="header">Tap The Box</h2>
+        <div id="pic" v-bind:class="{opened: ended}">
+        </div>
+        <div id="barbox">
+            <div v-bind:style="{width: bar + '%'}"></div>
+        </div>
+        <div id="controls">
+            <button v-on:click="tap" v-show="!ended">tap</button>
+            <button @click="reset">reset</button>
+        </div>
+    </div>
+    <script src="js/tapBox.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+body{
+    background-color: #e4d7d7;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  color: brown;
+  font: italic bold 40px arial;
+  margin: 0 10px 10px 0;
+}
+div.header {
+  position: sticky;
+}
+
+#pic {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  background: url(../images/closedbox.jpg) center no-repeat;
+  background-size: 90%;
+}
+#pic.opened {
+  background: url(../images/openbox.jpg) center no-repeat;
+  background-size: 90%;
+}
+#barbox {
+  width: 240px;
+  margin: 0 auto 30px auto;
+  border: 2px solid #000;
+}
+#barbox div {
+  height: 30px;
+  background: rgb(114, 11, 11);
+}
+#controls {
+  display: flex;
+  justify-content: center;
+}
+button {
+  margin-left: 20px;
+  margin-right: 20px;
+  background: rgba(165, 83, 83, 0.507);
+  font-size: 16px;
+  padding: 10px 30px;
+}
